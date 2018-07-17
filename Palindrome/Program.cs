@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Palindrome
 {
@@ -10,6 +6,14 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Type a word to see if it is a palindrome:");
+
+            string input = Console.ReadLine();
+
+            Palindrome palindrome = new Palindrome();
+
+            Console.WriteLine(palindrome.IsWordAPalindrome(input));
+            Console.ReadLine();
         }
     }
 }
